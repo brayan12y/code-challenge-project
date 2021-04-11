@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <title>Home - Tita Media</title>
+</head>
+
+<body>
+
+    <header>
+
+
+        <div class="hamburger" id="remove_hamburger">
+            <div class="_layer -top"></div>
+            <div class="_layer -mid"></div>
+            <div class="_layer -bottom"></div>
+        </div>
+
+        <nav class="nav_header nav_ocl">
+            <div class="nav_logo">
+
+                <img src="img/logo_ letter.jpg" class="nav_logo_img">
+
+            </div>
+
+            <div class="nav_menu menuppal" id="menu_remove">
+
+                <ul class="nav_menu_list" id="myTopnav">
+
+                    <li onclick="activeTab('All'), ocultar()">
+                        <a class="nav_link all active" href="#font">All</a>
+                    </li>
+
+                    <li onclick="activeTab('Branding'), ocultar()">
+                        <a class="nav_link branding" href="#font">Branding</a>
+                    </li>
+
+                    <li onclick="activeTab('Web'), ocultar()">
+                        <a class="nav_link web" href="#font">Web</a>
+                    </li>
+
+                    <li onclick="activeTab('Photography'), ocultar()">
+                        <a class="nav_link photography" href="#font">Photography</a>
+                    </li>
+
+                    <li onclick="activeTab('App'), ocultar()">
+                        <a class="nav_link app" href="#font">App</a>
+                    </li>
+
+                    <li class="nav_link_none">
+                        <a href="">
+                            <ion-icon name="search"></ion-icon>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+        
+    </header>
+
+    <main class="main">
+
+        <section class="header_presentation" >
+            <div class="header_container">
+
+                <h1>EXPLORE BEYOND HORIZON</h1>
+
+                <div class="header_presentation_paragraph">
+                    <P>Magna mundi referrentur quo, no rebum dignissim qui.
+                        <br>Per quodsi accusata id, agam labores.</P>
+
+                </div>
+
+                <!-- <a href="#" class="header_presentation_btn">VIEW OUR WORK</a> -->
+                <div class="button">
+                    <a href="#" class="btn">VIEW OUR WORK</a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="portfolio_container">
+
+
+            <div class="portfolio_btns">
+                <span onclick="grid_view()" class="material-icons-sharp">
+                    grid_view
+                </span>
+                <span onclick="grid_list()" class="material-icons-sharp">
+                    table_rows
+                </span>
+            </div>
+
+            <div class="nav_menu portfolio_center_menu ">
+                <ul class="nav_menu_list">
+
+                    <li onclick="activeTab('All')">
+                        <a class="nav_link all active" href="#all">All</a>
+                    </li>
+
+                    <li onclick="activeTab('Branding')">
+                        <a class="nav_link branding" href="#branding">Branding</a>
+                    </li>
+
+                    <li onclick="activeTab('Web')">
+                        <a class="nav_link web" href="#web">Web</a>
+                    </li>
+
+                    <li onclick="activeTab('Photography')">
+                        <a class="nav_link photography" href="#photography">Photography</a>
+                    </li>
+
+                    <li onclick="activeTab('App')">
+                        <a class="nav_link app" href="#app">App</a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+        </section>
+        <section class="section_loader">
+ 
+
+            <div id="pre-loader" class="pre"></div>
+
+        </section>
+
+        <section class="img_portfolio" id="img_portfolio">
+            <div id="img-json"></div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer class="footer" id="font">
+        <div class="footer_container">
+
+            <div class="copyright">
+                <p>© 2016 - <span>Sneak</span> All Right Reserved</p>
+            </div>
+
+            <div class="footer_social-networks">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="basketball-outline"></ion-icon>
+                <ion-icon name="logo-google"></ion-icon>
+                <ion-icon name="logo-youtube"></ion-icon>
+            </div>
+
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="portfolio.json"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+
+
+
+
+
+</html>
